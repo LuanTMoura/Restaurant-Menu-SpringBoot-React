@@ -7,13 +7,12 @@ import com.example.restaurantmenu.repositories.FoodRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 public class FoodController {
     @Autowired
@@ -56,15 +55,15 @@ public class FoodController {
         BeanUtils.copyProperties (foodResponseDto, foodModel);
         return ResponseEntity.status(HttpStatus.OK).body (foodRepository.save(foodModel));
     }
-    @DeleteMapping("/menu/{id}")
+    */
+    @DeleteMapping("/foods/{id}")
     public ResponseEntity<Object> deleteFood (@PathVariable(value="id") Long id) {
-        Optional<FoodModel> foodO = foodRepository.findById(id);
+        Optional <FoodModel> foodO = foodRepository.findById(id);
         if(foodO.isEmpty()) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("food not found.");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Food not found.");
         }
         foodRepository.delete(foodO.get());
-        return ResponseEntity.status(HttpStatus.OK).body ("food deleted successfully.");
+        return ResponseEntity.status(HttpStatus.OK).body ("Food deleted successfully.");
     }
-*/
 }
 

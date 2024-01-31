@@ -1,4 +1,4 @@
-import "./card.css"
+import "./card.css";
 
 interface CardProps {
     price: number,
@@ -6,11 +6,12 @@ interface CardProps {
     image: string
 }
 
-export function Card({price, image, title} : CardProps) {
-        return (
+export function Card({ price, image, title } : CardProps){
+    return(
         <div className="card">
-            <img/>
-            <h2></h2>
-            <p><b>Value:</b></p>
-        </div>)
+            <img src={image}/>
+            <h2>{title}</h2>
+            <p><b>Valor: </b>{price}</p>
+        </div>
+    )
 }
