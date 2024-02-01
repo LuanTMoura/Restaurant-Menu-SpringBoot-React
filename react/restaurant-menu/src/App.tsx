@@ -3,11 +3,19 @@ import './App.css'
 import { Card } from './card/card';
 import { FoodData } from './interface/FoodData';
 import { useFoodData } from './hooks/useFoodData';
+import { CreateModal } from './create-modal/create-modal';
 
 function App() {
 const {data} = useFoodData();
 
-  return (
+const [isModalOpen, setIsModalOpen] = useState(false);
+
+
+const handleOpenModal = () => {
+  setIsModalOpen (prev => !prev)
+}
+
+return (
     <div className='container'>
       <h1>Menu</h1>
       <div className='card-grid'>
@@ -18,6 +26,9 @@ const {data} = useFoodData();
       image={foodData.image}/>
       )}
       </div>
+
+      {isModalOpen && <CreateModal closeModal={handleOpenModal}/>}
+      <button onClick={handleOpenModal}>New</button>
     </div>
   )
 }
