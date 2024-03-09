@@ -1,7 +1,8 @@
 # Restaurant-Menu-Spring-React
  This is my repository about a Spring Boot Application using React, where I present a simple website of a Restaurant Menu.
 
-<img src="https://github.com/LuanTMoura/Restaurant-Menu-SpringBoot-React/imgs/demo.png" widht=400px height=200px/>
+![demo](https://github.com/LuanTMoura/Restaurant-Menu-SpringBoot-React/assets/106880830/898b6660-e930-40b0-ab11-542f5e5d88ee)
+
 
  ## License
 
@@ -20,7 +21,7 @@ Search for your cmd program or PowerShell (for Windows Users) and run this:
 git clone https://github.com/LuanTMoura/Restaurant-Menu-SpringBoot-React.git
 ```
 
-If you prefer another way, inside this repository, search for the green button "<Code>" and choose between Open with GitHub Desktop or Download Zip.
+If you prefer another way, inside this repository, search for the green button "``<Code>``" and choose between Open with GitHub Desktop or Download Zip.
 
 ## Run
 
