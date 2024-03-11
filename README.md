@@ -8,9 +8,21 @@
 
 [![License: MIT (https://github.com/LuanTMoura/Study-CRUD-Java/blob/main/LICENSE)](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
- ## What I've learned?
+## Specifications
 
-- 
+[**Maven - SpringBoot Project**](https://github.com/LuanTMoura/Restaurant-Menu-SpringBoot-React/blob/main/springboot/pom.xml);
+
+[**NPM - React Project**](https://github.com/LuanTMoura/Restaurant-Menu-SpringBoot-React/blob/main/react/restaurant-menu/package.json);
+
+[**Relational Database Version - PostGres**](https://www.postgresql.org/docs/release/16.1/);
+
+## What I've learned with this project?
+
+- How to map objects;
+- The use of DTO's (Data Transfer Object);
+- Good practices with specific annotations with Spring Boot and Hibernate, like ``@NotNull`` and ``@NotBlank``, ``@GeneratedValue``;
+- A little bit of the use of React properties and Tanstack Query libraries to do the connection between data on Back-End and interface on Front-End;
+- What is CORS and what is the use on the browsers etc;
 
 # How to install and run on my machine?
 
