@@ -10,19 +10,30 @@
 
 ## Specifications
 
-[**Maven - SpringBoot Project**](https://github.com/LuanTMoura/Restaurant-Menu-SpringBoot-React/blob/main/springboot/pom.xml);
+- [**Maven - SpringBoot Project**](https://github.com/LuanTMoura/Restaurant-Menu-SpringBoot-React/blob/main/springboot/pom.xml);
 
-[**NPM - React Project**](https://github.com/LuanTMoura/Restaurant-Menu-SpringBoot-React/blob/main/react/restaurant-menu/package.json);
+- [**NPM - React Project**](https://github.com/LuanTMoura/Restaurant-Menu-SpringBoot-React/blob/main/react/restaurant-menu/package.json);
 
-[**Relational Database Version - PostGres**](https://www.postgresql.org/docs/release/16.1/);
+- [**Relational Database Version - PostGres**](https://www.postgresql.org/docs/release/16.1/);
+
+## API Documentation
+
+- [**Restaurant Menu API - Postman**](https://documenter.getpostman.com/view/32378462/2sA2xjyW3h);
+
+## Resources
+
+- [**Video tutorial part 1**](https://www.youtube.com/watch?v=lUVureR5GqI&t=15s&pp=ygUiQ0FSREFQSU8gRElHSVRBTCByZWFjdCBzcHJpbmcgYm9vdA%3D%3D);
+- [**Video tutorial part 2**](https://www.youtube.com/watch?v=WHruc3_2z68);
+- [**Spring Initializer**](https://start.spring.io/);
 
 ## What I've learned with this project?
 
-- How to map objects;
+- How to map objects using annotations;
 - The use of DTO's (Data Transfer Object);
-- Good practices with specific annotations with Spring Boot and Hibernate, like ``@NotNull`` and ``@NotBlank``, ``@GeneratedValue``;
+- Best practices with specific annotations with Spring Boot and Hibernate, like ``@NotNull`` and ``@NotBlank``, ``@GeneratedValue``;
 - A little bit of the use of React properties and Tanstack Query libraries to do the connection between data on Back-End and interface on Front-End;
 - What is CORS and what is the use on the browsers etc;
+- A bit about Java Records;
 
 # How to install and run on my machine?
 
@@ -52,8 +63,7 @@ mvn spring-boot:run
 ### Inside the React Application path
 Search for terminal and paste this command.
 ```tsx
+npm install
 npm run dev
 ```
 Again, if something goes bad, just do the recommendation among the intructions.
-
-# How it works? 
